@@ -1,0 +1,20 @@
+button {
+    min-width: 80px;
+    margin-right: 10px;
+    padding: 3px;
+  
+    outline: none;
+    border: 1px solid rgb(204, 186, 186);
+    border-radius: 2px;
+  
+    background-color: rgb(32, 46, 30);
+  
+    font-weight: 600;
+    text-transform: capitalize;
+    cursor: pointer;
+
+  }
+  
+  button:hover {
+    color: #fff;
+  }
