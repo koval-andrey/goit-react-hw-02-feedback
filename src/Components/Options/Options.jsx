@@ -1,19 +1,21 @@
 import styles from './Options.module.css';
 
-function Option ( { options, onLeaveFeedback } ){
-return (
-    <div>
-{options.map(option => {
-    return (<button 
-    type="button" 
-    key={option} 
-    className={styles[option]} 
-    onClick={() => onLeaveFeedback(option)}>
-        {option}
-    </button> )
-})}
-    </div>
-)  
-};
-
-export default Option;
+function Options({ options, onLeaveFeedback }) {
+    return (
+      <>
+        {options.map(option => {
+          return (
+            <button
+              key={option}
+              className={styles[option]}
+              type="button"
+              onClick={() => onLeaveFeedback(option)}
+            >
+              {option}
+            </button>
+          );
+        })}
+      </>
+    );
+  }
+export default Options;
